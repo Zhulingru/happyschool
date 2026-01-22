@@ -31,6 +31,7 @@ const translations = {
         projects: {
             title: '學生作品',
             subtitle: '點擊縮圖開始體驗（建議用手機直向操作）',
+            sceneInfo: '數字代表學生負責的場景編號',
             experience: '開始體驗',
             details: '作品介紹'
         },
@@ -104,6 +105,7 @@ const translations = {
         projects: {
             title: 'Student Projects',
             subtitle: 'Click thumbnail to start experience (recommended: mobile portrait mode)',
+            sceneInfo: 'The number represents the scene number that the student is responsible for',
             experience: 'Start Experience',
             details: 'Project Details'
         },
@@ -216,17 +218,25 @@ function createProjectCard(project, index) {
     const title = project.title[lang] || project.title.zh;
     const summary = project.summary[lang] || project.summary.zh;
     const credits = project.credits[lang] || project.credits.zh;
-    const tags = project.tags[lang] || project.tags.zh;
 
     // SDG badges
     const sdgBadges = project.sdgs.map(sdg => 
         `<span class="sdg-badge">SDG ${sdg}</span>`
     ).join('');
 
-    // Tags
-    const tagElements = tags.map(tag => 
-        `<span class="tag">${tag}</span>`
-    ).join('');
+    // Students list with scene numbers
+    let studentsList = '';
+    if (project.students && project.students.length > 0) {
+        studentsList = '<div class="project-students"><h4 class="students-title">' + 
+            (currentLang === 'zh' ? '學生名單' : 'Students') + '</h4><ul class="students-list">';
+        project.students.forEach(student => {
+            studentsList += `<li class="student-item">
+                <span class="scene-badge">場景 ${student.scene}</span>
+                <span class="student-name">${student.name}</span>
+            </li>`;
+        });
+        studentsList += '</ul></div>';
+    }
 
     card.innerHTML = `
         <div class="project-thumb">
@@ -236,7 +246,7 @@ function createProjectCard(project, index) {
             <h3 class="project-title">${title}</h3>
             <p class="project-summary">${summary}</p>
             <div class="project-sdgs">${sdgBadges}</div>
-            <div class="project-tags">${tagElements}</div>
+            ${studentsList}
             <div class="project-actions">
                 <button class="btn btn-primary project-experience" data-project-id="${project.id}">
                     ${translations[currentLang].projects.experience}

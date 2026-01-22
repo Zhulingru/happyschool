@@ -2,116 +2,128 @@
   {
     "id": "p1",
     "title": {
-      "zh": "餐桌之外：當季蔬果永續飲食計畫",
-      "en": "Beyond the Table: Seasonal Produce Sustainable Diet Plan"
+      "zh": "第 1 組作品",
+      "en": "Group 1 Project"
     },
     "sdgs": [11, 12],
     "summary": {
-      "zh": "從市場到餐桌，重新理解食物旅程與永續選擇。",
-      "en": "From market to table, rethinking the food journey and sustainable choices."
+      "zh": "學生作品展示",
+      "en": "Student Project Showcase"
     },
     "thumb": "assets/thumbs/p1.svg",
-    "delightex_url": "https://delightex.com/demo1",
+    "delightex_url": "https://edu.delightex.com/BGA-BKV",
     "mode": "external",
     "credits": {
       "zh": "第 1 組",
       "en": "Group 1"
     },
-    "tags": {
-      "zh": ["永續飲食", "市場", "在地"],
-      "en": ["Sustainable Diet", "Market", "Local"]
-    }
+    "students": [
+      {"scene": 1, "name": "羅晨希"},
+      {"scene": 2, "name": "林詠樂"},
+      {"scene": 3, "name": "陳子亦"},
+      {"scene": 4, "name": "簡安妍"},
+      {"scene": 5, "name": "張凱柏"}
+    ]
   },
   {
     "id": "p2",
     "title": {
-      "zh": "智慧城市：永續交通解決方案",
-      "en": "Smart City: Sustainable Transportation Solutions"
+      "zh": "第 2 組作品",
+      "en": "Group 2 Project"
     },
     "sdgs": [9, 11],
     "summary": {
-      "zh": "運用科技優化城市交通，減少碳排放，打造宜居環境。",
-      "en": "Using technology to optimize urban transportation, reduce carbon emissions, and create livable environments."
+      "zh": "學生作品展示",
+      "en": "Student Project Showcase"
     },
     "thumb": "assets/thumbs/p2.svg",
-    "delightex_url": "https://delightex.com/demo2",
+    "delightex_url": "https://edu.delightex.com/YJS-KCY",
     "mode": "external",
     "credits": {
       "zh": "第 2 組",
       "en": "Group 2"
     },
-    "tags": {
-      "zh": ["智慧城市", "交通", "減碳"],
-      "en": ["Smart City", "Transportation", "Carbon Reduction"]
-    }
+    "students": [
+      {"scene": 1, "name": "朱岳彤"},
+      {"scene": 2, "name": "陳可為"},
+      {"scene": 3, "name": "王子權"},
+      {"scene": 4, "name": "陳道勳"}
+    ]
   },
   {
     "id": "p3",
     "title": {
-      "zh": "數位包容：縮小城鄉教育差距",
-      "en": "Digital Inclusion: Bridging Urban-Rural Education Gap"
+      "zh": "第 3 組作品",
+      "en": "Group 3 Project"
     },
-    "sdgs": [4, 10],
+    "sdgs": [10],
     "summary": {
-      "zh": "透過數位工具讓偏鄉學童也能享有優質教育資源。",
-      "en": "Enabling quality educational resources for rural students through digital tools."
+      "zh": "學生作品展示",
+      "en": "Student Project Showcase"
     },
     "thumb": "assets/thumbs/p3.svg",
-    "delightex_url": "https://delightex.com/demo3",
+    "delightex_url": "https://edu.delightex.com/NYD-SND",
     "mode": "external",
     "credits": {
       "zh": "第 3 組",
       "en": "Group 3"
     },
-    "tags": {
-      "zh": ["數位教育", "偏鄉", "包容"],
-      "en": ["Digital Education", "Rural", "Inclusion"]
-    }
+    "students": [
+      {"scene": 2, "name": "吳享亙"},
+      {"scene": 4, "name": "劉昱頫"},
+      {"scene": 6, "name": "黃浡瑋"},
+      {"scene": 7, "name": "林佑謙"},
+      {"scene": 8, "name": "鄧浩揚"}
+    ]
   },
   {
     "id": "p4",
     "title": {
-      "zh": "循環經濟：廢棄物轉化再生計畫",
-      "en": "Circular Economy: Waste-to-Resource Transformation"
+      "zh": "第 4 組作品",
+      "en": "Group 4 Project"
     },
     "sdgs": [9, 12],
     "summary": {
-      "zh": "將廢棄物轉化為資源，實踐循環經濟理念。",
-      "en": "Transforming waste into resources, practicing circular economy principles."
+      "zh": "學生作品展示",
+      "en": "Student Project Showcase"
     },
     "thumb": "assets/thumbs/p4.svg",
-    "delightex_url": "https://delightex.com/demo4",
+    "delightex_url": "https://edu.delightex.com/PFA-GNU",
     "mode": "external",
     "credits": {
       "zh": "第 4 組",
       "en": "Group 4"
     },
-    "tags": {
-      "zh": ["循環經濟", "廢棄物", "再生"],
-      "en": ["Circular Economy", "Waste", "Recycling"]
-    }
+    "students": [
+      {"scene": 1, "name": "鄭仁義"},
+      {"scene": 2, "name": "霍共安"},
+      {"scene": 3, "name": "霍共義"},
+      {"scene": 4, "name": "陳潤翔"}
+    ]
   },
   {
     "id": "p5",
     "title": {
-      "zh": "永續社區：在地行動與全球視野",
-      "en": "Sustainable Community: Local Action, Global Vision"
+      "zh": "第 5 組作品",
+      "en": "Group 5 Project"
     },
     "sdgs": [11, 12],
     "summary": {
-      "zh": "從社區出發，連結全球永續發展目標，展現在地行動力。",
-      "en": "Starting from the community, connecting to global SDGs, demonstrating local action."
+      "zh": "學生作品展示",
+      "en": "Student Project Showcase"
     },
     "thumb": "assets/thumbs/p5.svg",
-    "delightex_url": "https://delightex.com/demo5",
+    "delightex_url": "https://edu.delightex.com/CJR-GAP",
     "mode": "external",
     "credits": {
       "zh": "第 5 組",
       "en": "Group 5"
     },
-    "tags": {
-      "zh": ["社區行動", "永續", "在地"],
-      "en": ["Community Action", "Sustainability", "Local"]
-    }
+    "students": [
+      {"scene": 1, "name": "丁子容"},
+      {"scene": 2, "name": "魏晟祐"},
+      {"scene": 3, "name": "柯潤青"},
+      {"scene": 4, "name": "張喜恩"}
+    ]
   }
 ]
