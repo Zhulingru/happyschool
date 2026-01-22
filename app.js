@@ -251,11 +251,15 @@ function createProjectCard(project, index) {
     studentLinks.forEach(link => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
+            e.stopPropagation();
             const projectId = link.dataset.projectId;
             const studentIndex = parseInt(link.dataset.studentIndex);
             const project = projects.find(p => p.id === projectId);
+            console.log('Student link clicked:', { projectId, studentIndex, project, students: project?.students });
             if (project && project.students && project.students[studentIndex]) {
                 openStudentModal(project.students[studentIndex], project);
+            } else {
+                console.error('Student not found:', { projectId, studentIndex, project });
             }
         });
     });
@@ -280,6 +284,8 @@ function openProjectExperience(project) {
 
     modalTitle.textContent = title;
     modalExternalLink.href = project.delightex_url;
+    modalExternalLink.target = '_blank';
+    modalExternalLink.rel = 'noopener noreferrer';
     modalExternalLink.textContent = translations[currentLang].modal.openNew;
 
     // Try embed mode first, fallback to external
@@ -323,7 +329,15 @@ function openStudentModal(student, project) {
     const experienceLink = document.getElementById('studentExperienceLink');
     const journeyLink = document.getElementById('studentJourneyLink');
 
-    if (!modal) return;
+    if (!modal) {
+        console.error('Student modal not found');
+        return;
+    }
+
+    if (!modalTitle || !experienceLink || !journeyLink) {
+        console.error('Student modal elements not found');
+        return;
+    }
 
     // Set modal title
     modalTitle.textContent = student.name;
@@ -331,17 +345,37 @@ function openStudentModal(student, project) {
     // Set experience link
     if (student.experience_url) {
         experienceLink.href = student.experience_url;
-        experienceLink.style.display = 'block';
+        experienceLink.target = '_blank';
+        experienceLink.rel = 'noopener noreferrer';
+        experienceLink.style.display = 'flex';
+        experienceLink.style.pointerEvents = 'auto';
+        // Remove any existing click handlers that might interfere
+        experienceLink.onclick = function(e) {
+            e.stopPropagation();
+            // Let the default link behavior happen (open in new tab)
+        };
+        console.log('Experience link set to:', student.experience_url);
     } else {
         experienceLink.style.display = 'none';
+        console.warn('No experience_url for student:', student.name);
     }
 
     // Set journey link
     if (student.journey_url) {
         journeyLink.href = student.journey_url;
-        journeyLink.style.display = 'block';
+        journeyLink.target = '_blank';
+        journeyLink.rel = 'noopener noreferrer';
+        journeyLink.style.display = 'flex';
+        journeyLink.style.pointerEvents = 'auto';
+        // Remove any existing click handlers that might interfere
+        journeyLink.onclick = function(e) {
+            e.stopPropagation();
+            // Let the default link behavior happen (open in new tab)
+        };
+        console.log('Journey link set to:', student.journey_url);
     } else {
         journeyLink.style.display = 'none';
+        console.warn('No journey_url for student:', student.name);
     }
 
     modal.classList.add('active');
@@ -533,19 +567,26 @@ function setupAccordion() {
 // ============================================
 
 function setupSmoothScroll() {
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    // Only handle navigation links, not modal links or external links
+    document.querySelectorAll('.nav-links a[href^="#"], .hero-cta a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             const href = this.getAttribute('href');
-            if (href === '#') return;
+            if (href === '#' || !href.startsWith('#')) return;
             
-            e.preventDefault();
-            const target = document.querySelector(href);
-            if (target) {
-                const offsetTop = target.offsetTop - 80; // Account for fixed navbar
-                window.scrollTo({
-                    top: offsetTop,
-                    behavior: 'smooth'
-                });
+            // Check if it's a valid anchor selector
+            try {
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) {
+                    const offsetTop = target.offsetTop - 80; // Account for fixed navbar
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            } catch (error) {
+                // If href is not a valid selector, just let the default behavior happen
+                console.warn('Invalid anchor link:', href);
             }
         });
     });

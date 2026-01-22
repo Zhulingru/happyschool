@@ -971,6 +971,7 @@ section {
     position: relative;
     display: flex;
     flex-direction: column;
+    z-index: 2001;
 }
 
 .modal-close {
@@ -1062,6 +1063,9 @@ section {
     text-decoration: none;
     transition: var(--transition-normal);
     min-height: 60px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
 }
 
 .student-option-btn:hover {
