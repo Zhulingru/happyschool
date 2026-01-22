@@ -23,7 +23,7 @@ const translations = {
         },
         summary: {
             title: '課程摘要',
-            short: '本課程結合 SDGs 永續發展目標與科技素養，引導學生透過 Delightex 平台創作互動式專題。學生分為五組，從不同面向探討永續議題，運用科技工具提出創新解決方案，展現對社會責任的思考與實踐能力。',
+            short: '本課程結合 SDGs 永續發展目標與科技素養，引導學生透過 Delightex 平台創作互動式專題。學生將從不同面向探討永續議題，運用科技工具進行想法創作，展現對社會責任的思考與實踐能力。',
             expand: '展開閱讀更多',
             collapse: '收起',
             full: '本專題課程為期一學期，旨在培養學生的科技素養與永續發展意識。課程內容涵蓋 SDGs 目標 7（可負擔的潔淨能源）、9（產業創新與基礎設施）、10（減少不平等）、11（永續城市與社區）、12（負責任的消費與生產）等五大面向。學生透過 Delightex 互動式平台，將抽象的永續概念轉化為具體可體驗的數位作品，不僅學習程式設計與互動設計，更深入理解永續發展的內涵與實踐方式。每組作品都經過完整的設計思考流程，從問題發想、使用者研究、原型製作到最終呈現，展現學生跨領域整合能力與創新思維。'
@@ -81,6 +81,10 @@ const translations = {
             tip: '建議用手機直向體驗，若載入較久請稍候',
             openNew: '在新分頁開啟',
             close: '關閉'
+        },
+        student: {
+            experience: '作品體驗',
+            journey: '課堂歷程'
         }
     },
     en: {
@@ -88,23 +92,23 @@ const translations = {
             home: 'Home',
             projects: 'Projects',
             sdgs: 'SDGs',
-            team: 'Team'
+            team: 'Instructor'
         },
         hero: {
             title: 'SDGs Tech Literacy Project Showcase',
-            subtitle: 'Five projects, five perspectives, allowing parents to experience their children\'s creations directly on mobile',
+            subtitle: '',
             cta: 'Explore Projects'
         },
         summary: {
             title: 'Course Summary',
-            short: 'This course combines SDGs sustainable development goals with tech literacy, guiding students to create interactive projects through the Delightex platform. Students are divided into five groups, exploring sustainability issues from different perspectives, using technology tools to propose innovative solutions, demonstrating their thinking and practical abilities regarding social responsibility.',
+            short: 'This course combines SDGs sustainable development goals with tech literacy, guiding students to create interactive projects through the Delightex platform. Students will explore sustainability issues from different perspectives, using technology tools to create innovative ideas, demonstrating their thinking and practical abilities regarding social responsibility.',
             expand: 'Read More',
             collapse: 'Collapse',
             full: 'This project course spans one semester, aiming to cultivate students\' tech literacy and sustainable development awareness. The course content covers five major aspects of SDGs: Goal 7 (Affordable and Clean Energy), 9 (Industry, Innovation and Infrastructure), 10 (Reduced Inequalities), 11 (Sustainable Cities and Communities), and 12 (Responsible Consumption and Production). Through the Delightex interactive platform, students transform abstract sustainability concepts into concrete, experienceable digital works, not only learning programming and interaction design but also deeply understanding the connotation and practice of sustainable development. Each group\'s work goes through a complete design thinking process, from problem ideation, user research, prototyping to final presentation, demonstrating students\' cross-disciplinary integration abilities and innovative thinking.'
         },
         projects: {
             title: 'Student Projects',
-            subtitle: 'Click thumbnail to start experience (recommended: mobile portrait mode)',
+            subtitle: 'Click student name to enter project page (recommended: mobile landscape mode)',
             sceneInfo: 'The number represents the scene number that the student is responsible for',
             experience: 'Start Experience',
             details: 'Project Details'
@@ -141,20 +145,24 @@ const translations = {
             }
         },
         team: {
-            title: 'Teaching Team',
+            title: 'Instructor',
             qubi: {
                 role: 'Instructor',
                 bio: 'Dedicated to technology education and sustainable development education, guiding students to use technology tools to explore social issues and cultivate innovative thinking and practical abilities.'
             }
         },
         footer: {
-            copyright: '© 2024 SDGs Tech Literacy Project Showcase | All Rights Reserved',
+            copyright: '© 2026 SDGs Tech Literacy Project Showcase | All Rights Reserved',
             note: 'This website is for educational display purposes only'
         },
         modal: {
             tip: 'Recommended: mobile portrait mode. Please wait if loading takes time',
             openNew: 'Open in New Tab',
             close: 'Close'
+        },
+        student: {
+            experience: 'Project Experience',
+            journey: 'Learning Journey'
         }
     }
 };
