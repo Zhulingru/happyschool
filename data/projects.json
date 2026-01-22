@@ -2,8 +2,8 @@
   {
     "id": "p1",
     "title": {
-      "zh": "第 1 組作品",
-      "en": "Group 1 Project"
+      "zh": "第一組作品",
+      "en": "學生作品展示"
     },
     "sdgs": [11, 12],
     "summary": {
@@ -18,18 +18,18 @@
       "en": "Group 1"
     },
     "students": [
-      {"scene": 1, "name": "羅晨希"},
-      {"scene": 2, "name": "林詠樂"},
-      {"scene": 3, "name": "陳子亦"},
-      {"scene": 4, "name": "簡安妍"},
-      {"scene": 5, "name": "張凱柏"}
+      {"scene": 1, "name": "羅晨希", "experience_url": "https://edu.delightex.com/QJD-URQ", "journey_url": "https://drive.google.com/file/d/1NlPnANvWoHF42YF7egBttvFGA95FzdsH/view?usp=drive_link"},
+      {"scene": 2, "name": "林詠樂", "experience_url": "https://edu.delightex.com/VAK-CHZ", "journey_url": "https://drive.google.com/file/d/1dvfE1EvMF0M6Q_CQsZeFxsYeMaMkfe0E/view?usp=drive_link"},
+      {"scene": 3, "name": "陳子亦", "experience_url": "https://edu.delightex.com/TSP-NKM", "journey_url": "https://drive.google.com/file/d/1R51HqYzDP0_Opo-Les6agQPSGubOlQaM/view?usp=drive_link"},
+      {"scene": 4, "name": "簡安妍", "experience_url": "https://edu.delightex.com/EYF-KUL", "journey_url": "https://drive.google.com/file/d/143WweU5t8rQetNJItE0pNhKzOGTnYtT1/view?usp=drive_link"},
+      {"scene": 5, "name": "張凱柏", "experience_url": "https://edu.delightex.com/MFE-DTN", "journey_url": "https://drive.google.com/file/d/1UGHGHwWXoG40FfXGS_xV_J_9PXBwqXXc/view?usp=drive_link"}
     ]
   },
   {
     "id": "p2",
     "title": {
-      "zh": "第 2 組作品",
-      "en": "Group 2 Project"
+      "zh": "第二組作品",
+      "en": "學生作品展示"
     },
     "sdgs": [9, 11],
     "summary": {
@@ -44,17 +44,17 @@
       "en": "Group 2"
     },
     "students": [
-      {"scene": 1, "name": "朱岳彤"},
-      {"scene": 2, "name": "陳可為"},
-      {"scene": 3, "name": "王子權"},
-      {"scene": 4, "name": "陳道勳"}
+      {"scene": 1, "name": "朱岳彤", "experience_url": "https://edu.delightex.com/VHN-LVT", "journey_url": "https://drive.google.com/file/d/1x6ssYUIxWo9LTW9qMQwsT_wCRQBiDMMB/view?usp=drive_link"},
+      {"scene": 2, "name": "陳可為", "experience_url": "https://edu.delightex.com/AJU-GQH", "journey_url": "https://drive.google.com/file/d/19lA67FrVJTEAcmrdbWzRwsGVjr5vkj8I/view?usp=drive_link"},
+      {"scene": 3, "name": "王子權", "experience_url": "https://edu.delightex.com/CQN-VJT", "journey_url": "https://drive.google.com/file/d/17ija8yJ1H4YZH8GEC2jnWmWag_iuHE3j/view?usp=drive_link"},
+      {"scene": 4, "name": "陳道勳", "experience_url": "https://edu.delightex.com/JFW-FWF", "journey_url": "https://drive.google.com/file/d/18KGd2nKefJdFDn_LFy9lFhnMIteIXtzu/view?usp=drive_link"}
     ]
   },
   {
     "id": "p3",
     "title": {
-      "zh": "第 3 組作品",
-      "en": "Group 3 Project"
+      "zh": "第三組作品",
+      "en": "學生作品展示"
     },
     "sdgs": [10],
     "summary": {
@@ -69,18 +69,18 @@
       "en": "Group 3"
     },
     "students": [
-      {"scene": 2, "name": "吳享亙"},
-      {"scene": 4, "name": "劉昱頫"},
-      {"scene": 6, "name": "黃浡瑋"},
-      {"scene": 7, "name": "林佑謙"},
-      {"scene": 8, "name": "鄧浩揚"}
+      {"scene": 2, "name": "吳享亙", "experience_url": "https://edu.delightex.com/JTC-BHY", "journey_url": "https://drive.google.com/file/d/1mNK_zvUozvvarSF_tyRPKw_j2BtKdNtR/view?usp=drive_link"},
+      {"scene": 4, "name": "劉昱頫", "experience_url": "https://edu.delightex.com/UKB-SFF", "journey_url": "https://drive.google.com/file/d/1QfGXB3Keu1YzsLkMEmYLDbnLa_Bn6A9h/view?usp=drive_link"},
+      {"scene": 6, "name": "黃浡瑋", "experience_url": "https://edu.delightex.com/SHB-RWY", "journey_url": "https://drive.google.com/file/d/1b6A9oTgncP8iuJWBhkOGf3AZdrdj43CG/view?usp=drive_link"},
+      {"scene": 7, "name": "林佑謙", "experience_url": "https://edu.delightex.com/BFY-JGH", "journey_url": "https://drive.google.com/file/d/1ImLQRQvBAfvhBhdnWj7gFksT-Jf8DQzX/view?usp=drive_link"},
+      {"scene": 8, "name": "鄧浩揚", "experience_url": "https://edu.delightex.com/PZZ-FFR", "journey_url": "https://drive.google.com/file/d/13GQUd1tS0uHyzTmxlMTVg-OeJFjwhGFA/view?usp=drive_link"}
     ]
   },
   {
     "id": "p4",
     "title": {
-      "zh": "第 4 組作品",
-      "en": "Group 4 Project"
+      "zh": "第四組作品",
+      "en": "學生作品展示"
     },
     "sdgs": [9, 12],
     "summary": {
@@ -95,17 +95,17 @@
       "en": "Group 4"
     },
     "students": [
-      {"scene": 1, "name": "鄭仁義"},
-      {"scene": 2, "name": "霍共安"},
-      {"scene": 3, "name": "霍共義"},
-      {"scene": 4, "name": "陳潤翔"}
+      {"scene": 1, "name": "鄭仁義", "experience_url": "https://edu.delightex.com/ASQ-KPC", "journey_url": "https://drive.google.com/file/d/1KBwTo_wGStEV-wUi3lrWe8TsUHp5YvW2/view?usp=drive_link"},
+      {"scene": 2, "name": "霍共安", "experience_url": "https://edu.delightex.com/SHC-AGP", "journey_url": "https://drive.google.com/file/d/1Enq_p1N4uaEC8cAy82qBx2ynzZRiUCji/view?usp=drive_link"},
+      {"scene": 3, "name": "霍共義", "experience_url": "https://edu.delightex.com/ACW-KPK", "journey_url": "https://drive.google.com/file/d/14vOgz5KdvKznRQwyYZGj9Nf3Occ0rpzI/view?usp=drive_link"},
+      {"scene": 4, "name": "陳潤翔", "experience_url": "https://edu.delightex.com/QUR-ABB", "journey_url": "https://drive.google.com/file/d/1W2t64N7zg7kI3qPSSSbOwXigOj1plBK6/view?usp=drive_link"}
     ]
   },
   {
     "id": "p5",
     "title": {
-      "zh": "第 5 組作品",
-      "en": "Group 5 Project"
+      "zh": "第五組作品",
+      "en": "學生作品展示"
     },
     "sdgs": [11, 12],
     "summary": {
@@ -120,10 +120,10 @@
       "en": "Group 5"
     },
     "students": [
-      {"scene": 1, "name": "丁子容"},
-      {"scene": 2, "name": "魏晟祐"},
-      {"scene": 3, "name": "柯潤青"},
-      {"scene": 4, "name": "張喜恩"}
+      {"scene": 1, "name": "丁子容", "experience_url": "https://edu.delightex.com/JJC-JLS", "journey_url": "https://drive.google.com/file/d/1fT8lck0vwxcPJkNdvRvpDyGo9shs0w28/view?usp=drive_link"},
+      {"scene": 2, "name": "魏晟祐", "experience_url": "https://edu.delightex.com/ECR-UND", "journey_url": "https://drive.google.com/file/d/13JcQjsHzD4YOgAHgvYIBWCnKen_80PwE/view?usp=drive_link"},
+      {"scene": 3, "name": "柯潤青", "experience_url": "https://edu.delightex.com/BBS-YHR", "journey_url": "https://drive.google.com/file/d/1Vvgs-MR7hiW0StAL1VQSrOB6o76dZpaW/view?usp=drive_link"},
+      {"scene": 4, "name": "張喜恩", "experience_url": "https://edu.delightex.com/XNT-ANV", "journey_url": "https://edu.delightex.com/XNT-ANV"}
     ]
   }
 ]

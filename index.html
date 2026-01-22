@@ -71,13 +71,7 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title" data-i18n="projects.title">學生作品</h2>
-                <p class="section-subtitle" data-i18n="projects.subtitle">點擊縮圖開始體驗（建議用手機直向操作）</p>
-                <div class="scene-info">
-                    <div class="scene-info-content">
-                        <img src="assets/phone-interface.png" alt="場景編號說明" class="scene-info-image" loading="lazy">
-                        <p class="scene-info-text" data-i18n="projects.sceneInfo">數字代表學生負責的場景編號</p>
-                    </div>
-                </div>
+                <p class="section-subtitle" data-i18n="projects.subtitle">點擊學生名稱開始體驗（建議用手機直向操作）</p>
             </div>
             
             <!-- Projects Grid -->
@@ -123,7 +117,7 @@
             <div class="team-grid">
                 <div class="team-card">
                     <div class="team-photo">
-                        <img src="assets/team/qubi.svg" alt="曲比老師" loading="lazy" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Crect fill=%22%23D4AF37%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%238B4513%22 font-size=%2240%22 font-weight=%22bold%22%3E曲比老師%3C/text%3E%3C/svg%3E'">
+                        <img src="assets/team/qubi.jpg" alt="曲比老師" loading="lazy" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Crect fill=%22%23D4AF37%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%238B4513%22 font-size=%2240%22 font-weight=%22bold%22%3E曲比老師%3C/text%3E%3C/svg%3E'">
                     </div>
                     <h3>曲比老師</h3>
                     <p class="team-role" data-i18n="team.qubi.role">指導教師</p>
@@ -157,6 +151,26 @@
                 </div>
                 <div class="modal-actions">
                     <a id="modalExternalLink" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-i18n="modal.openNew">在新分頁開啟</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Student Options Modal -->
+    <div class="modal" id="studentModal">
+        <div class="modal-content">
+            <button class="modal-close" id="studentModalClose" aria-label="Close">&times;</button>
+            <div class="modal-header">
+                <h3 id="studentModalTitle"></h3>
+            </div>
+            <div class="modal-body">
+                <div class="student-options">
+                    <a id="studentExperienceLink" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary student-option-btn">
+                        <span>作品體驗</span>
+                    </a>
+                    <a id="studentJourneyLink" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary student-option-btn">
+                        <span>課堂歷程</span>
+                    </a>
                 </div>
             </div>
         </div>

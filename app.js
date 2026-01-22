@@ -30,7 +30,7 @@ const translations = {
         },
         projects: {
             title: '學生作品',
-            subtitle: '點擊「開始體驗」進入作品作品頁面（建議用手機直向操作）',
+            subtitle: '點擊「學生名稱」進入作品頁面（建議用手機橫向操作）',
             sceneInfo: '數字代表學生負責的場景編號',
             experience: '開始體驗',
             details: '作品介紹'
@@ -74,7 +74,7 @@ const translations = {
             }
         },
         footer: {
-            copyright: '© 2024 SDGs 科技素養專題成果展 | 版權所有',
+            copyright: '© 2026 SDGs 科技素養專題成果展 | 版權所有',
             note: '本網站僅供教育展示用途'
         },
         modal: {
@@ -219,15 +219,18 @@ function createProjectCard(project, index) {
     const summary = project.summary[lang] || project.summary.zh;
     const credits = project.credits[lang] || project.credits.zh;
 
-    // Students list with scene numbers
+    // Students list with scene numbers and individual links
     let studentsList = '';
     if (project.students && project.students.length > 0) {
         studentsList = '<div class="project-students"><h4 class="students-title">' + 
             (currentLang === 'zh' ? '學生名單' : 'Students') + '</h4><ul class="students-list">';
-        project.students.forEach(student => {
+        project.students.forEach((student, studentIndex) => {
+            // Create clickable student item that opens modal
+            const studentId = `${project.id}-student-${studentIndex}`;
             studentsList += `<li class="student-item">
-                <span class="scene-badge">場景 ${student.scene}</span>
-                <span class="student-name">${student.name}</span>
+                <a href="#" class="student-link" data-student-id="${studentId}" data-project-id="${project.id}" data-student-index="${studentIndex}">
+                    <span class="student-name">${student.name}</span>
+                </a>
             </li>`;
         });
         studentsList += '</ul></div>';
@@ -238,24 +241,24 @@ function createProjectCard(project, index) {
             <img src="${project.thumb}" alt="${title}" loading="lazy" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 450%22%3E%3Crect fill=%22%232d2d2d%22 width=%22800%22 height=%22450%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23D4AF37%22 font-size=%2248%22 font-weight=%22bold%22%3E${encodeURIComponent(title)}%3C/text%3E%3C/svg%3E'">
         </div>
         <div class="project-content">
-            <h3 class="project-title">${title}</h3>
-            <p class="project-summary">${summary}</p>
             ${studentsList}
-            <div class="project-actions">
-                <button class="btn btn-primary project-experience" data-project-id="${project.id}">
-                    ${translations[currentLang].projects.experience}
-                </button>
-            </div>
             <p class="project-credits">${credits}</p>
         </div>
     `;
 
-    // Add click handler - only for the experience button
-    const experienceBtn = card.querySelector('.project-experience');
-    
-    const openProject = () => openProjectExperience(project);
-    
-    experienceBtn.addEventListener('click', openProject);
+    // Add click handlers for student links
+    const studentLinks = card.querySelectorAll('.student-link');
+    studentLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const projectId = link.dataset.projectId;
+            const studentIndex = parseInt(link.dataset.studentIndex);
+            const project = projects.find(p => p.id === projectId);
+            if (project && project.students && project.students[studentIndex]) {
+                openStudentModal(project.students[studentIndex], project);
+            }
+        });
+    });
 
     return card;
 }
@@ -307,6 +310,49 @@ function closeModal() {
         if (iframe) {
             iframe.src = '';
         }
+    }
+}
+
+// ============================================
+// Student Modal
+// ============================================
+
+function openStudentModal(student, project) {
+    const modal = document.getElementById('studentModal');
+    const modalTitle = document.getElementById('studentModalTitle');
+    const experienceLink = document.getElementById('studentExperienceLink');
+    const journeyLink = document.getElementById('studentJourneyLink');
+
+    if (!modal) return;
+
+    // Set modal title
+    modalTitle.textContent = student.name;
+
+    // Set experience link
+    if (student.experience_url) {
+        experienceLink.href = student.experience_url;
+        experienceLink.style.display = 'block';
+    } else {
+        experienceLink.style.display = 'none';
+    }
+
+    // Set journey link
+    if (student.journey_url) {
+        journeyLink.href = student.journey_url;
+        journeyLink.style.display = 'block';
+    } else {
+        journeyLink.style.display = 'none';
+    }
+
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeStudentModal() {
+    const modal = document.getElementById('studentModal');
+    if (modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
     }
 }
 
@@ -572,10 +618,27 @@ function setupEventListeners() {
         });
     }
 
+    // Student modal close
+    const studentModalClose = document.getElementById('studentModalClose');
+    if (studentModalClose) {
+        studentModalClose.addEventListener('click', closeStudentModal);
+    }
+
+    // Close modal on outside click
+    const studentModal = document.getElementById('studentModal');
+    if (studentModal) {
+        studentModal.addEventListener('click', (e) => {
+            if (e.target === studentModal) {
+                closeStudentModal();
+            }
+        });
+    }
+
     // Close modal on Escape key
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') {
             closeModal();
+            closeStudentModal();
         }
     });
 

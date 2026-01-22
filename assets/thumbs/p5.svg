@@ -8,6 +8,6 @@
   <rect width="800" height="450" fill="url(#grad5)"/>
   <circle cx="400" cy="150" r="60" fill="none" stroke="#D4AF37" stroke-width="4"/>
   <circle cx="400" cy="150" r="40" fill="none" stroke="#CD853F" stroke-width="3"/>
-  <text x="400" y="280" text-anchor="middle" fill="#D4AF37" font-size="32" font-weight="bold" font-family="Arial">作品 5</text>
-  <text x="400" y="320" text-anchor="middle" fill="#CD853F" font-size="20" font-family="Arial">Project 5</text>
+  <text x="400" y="280" text-anchor="middle" fill="#D4AF37" font-size="32" font-weight="bold" font-family="Arial">第五組作品</text>
+  <text x="400" y="320" text-anchor="middle" fill="#CD853F" font-size="20" font-family="Arial">學生作品展示</text>
 </svg>
