@@ -21,7 +21,7 @@
                 <a href="#hero" data-i18n="nav.home">首頁</a>
                 <a href="#projects" data-i18n="nav.projects">作品</a>
                 <a href="#sdgs" data-i18n="nav.sdgs">SDGs</a>
-                <a href="#team" data-i18n="nav.team">團隊</a>
+                <a href="#team" data-i18n="nav.team">教師</a>
             </div>
             <div class="nav-actions">
                 <button class="lang-toggle" id="langToggle" aria-label="Switch Language">EN</button>
@@ -47,7 +47,6 @@
         </div>
         <div class="hero-content">
             <h1 class="hero-title" data-i18n="hero.title">SDGs 科技素養專題成果展</h1>
-            <p class="hero-subtitle" data-i18n="hero.subtitle">五組作品，五種觀點，讓家長用手機直接體驗孩子的創作</p>
             <div class="hero-cta">
                 <a href="#projects" class="btn btn-primary" data-i18n="hero.cta">開始探索作品</a>
             </div>
@@ -63,12 +62,6 @@
             <h2 class="section-title" data-i18n="summary.title">課程摘要</h2>
             <div class="summary-content">
                 <p class="summary-text" data-i18n="summary.short">本課程結合 SDGs 永續發展目標與科技素養，引導學生透過 Delightex 平台創作互動式專題。學生分為五組，從不同面向探討永續議題，運用科技工具提出創新解決方案，展現對社會責任的思考與實踐能力。</p>
-                <div class="accordion">
-                    <button class="accordion-btn" id="accordionBtn" data-i18n="summary.expand">展開閱讀更多</button>
-                    <div class="accordion-content" id="accordionContent">
-                        <p data-i18n="summary.full">本專題課程為期一學期，旨在培養學生的科技素養與永續發展意識。課程內容涵蓋 SDGs 目標 7（可負擔的潔淨能源）、9（產業創新與基礎設施）、10（減少不平等）、11（永續城市與社區）、12（負責任的消費與生產）等五大面向。學生透過 Delightex 互動式平台，將抽象的永續概念轉化為具體可體驗的數位作品，不僅學習程式設計與互動設計，更深入理解永續發展的內涵與實踐方式。每組作品都經過完整的設計思考流程，從問題發想、使用者研究、原型製作到最終呈現，展現學生跨領域整合能力與創新思維。</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -87,16 +80,6 @@
                 </div>
             </div>
             
-            <!-- SDG Filter -->
-            <div class="sdg-filter" id="sdgFilter">
-                <button class="filter-btn active" data-sdg="all" data-i18n="filter.all">全部</button>
-                <button class="filter-btn" data-sdg="7" data-i18n="filter.sdg7">SDG 7</button>
-                <button class="filter-btn" data-sdg="9" data-i18n="filter.sdg9">SDG 9</button>
-                <button class="filter-btn" data-sdg="10" data-i18n="filter.sdg10">SDG 10</button>
-                <button class="filter-btn" data-sdg="11" data-i18n="filter.sdg11">SDG 11</button>
-                <button class="filter-btn" data-sdg="12" data-i18n="filter.sdg12">SDG 12</button>
-            </div>
-
             <!-- Projects Grid -->
             <div class="projects-grid" id="projectsGrid">
                 <!-- Projects will be dynamically loaded here -->
@@ -109,31 +92,26 @@
         <div class="container">
             <h2 class="section-title" data-i18n="sdgs.title">SDGs 永續發展目標</h2>
             <div class="sdgs-grid">
-                <div class="sdg-card" data-sdg="7">
+                <a href="https://futurecity.cw.com.tw/article/1298" target="_blank" rel="noopener noreferrer" class="sdg-card" data-sdg="7">
                     <div class="sdg-icon">7</div>
                     <h3 data-i18n="sdgs.7.title">可負擔的潔淨能源</h3>
                     <p data-i18n="sdgs.7.desc">確保所有人都能取得可負擔、可靠、永續及現代的能源</p>
-                </div>
-                <div class="sdg-card" data-sdg="9">
+                </a>
+                <a href="https://futurecity.cw.com.tw/article/1296" target="_blank" rel="noopener noreferrer" class="sdg-card" data-sdg="9">
                     <div class="sdg-icon">9</div>
                     <h3 data-i18n="sdgs.9.title">產業創新與基礎設施</h3>
                     <p data-i18n="sdgs.9.desc">建立具有韌性的基礎設施，促進包容且永續的工業化，並加速創新</p>
-                </div>
-                <div class="sdg-card" data-sdg="10">
-                    <div class="sdg-icon">10</div>
-                    <h3 data-i18n="sdgs.10.title">減少不平等</h3>
-                    <p data-i18n="sdgs.10.desc">減少國內及國家間的不平等</p>
-                </div>
-                <div class="sdg-card" data-sdg="11">
+                </a>
+                <a href="https://futurecity.cw.com.tw/article/1294" target="_blank" rel="noopener noreferrer" class="sdg-card" data-sdg="11">
                     <div class="sdg-icon">11</div>
                     <h3 data-i18n="sdgs.11.title">永續城市與社區</h3>
                     <p data-i18n="sdgs.11.desc">使城市與人類居住具包容、安全、韌性及永續性</p>
-                </div>
-                <div class="sdg-card" data-sdg="12">
+                </a>
+                <a href="https://futurecity.cw.com.tw/article/1293" target="_blank" rel="noopener noreferrer" class="sdg-card" data-sdg="12">
                     <div class="sdg-icon">12</div>
                     <h3 data-i18n="sdgs.12.title">負責任的消費與生產</h3>
                     <p data-i18n="sdgs.12.desc">確保永續消費及生產模式</p>
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -141,7 +119,7 @@
     <!-- Team Section -->
     <section class="team" id="team">
         <div class="container">
-            <h2 class="section-title" data-i18n="team.title">教師團隊</h2>
+            <h2 class="section-title" data-i18n="team.title">授課教師</h2>
             <div class="team-grid">
                 <div class="team-card">
                     <div class="team-photo">

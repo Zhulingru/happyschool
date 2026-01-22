@@ -573,7 +573,6 @@ section {
     opacity: 0;
     transform: translateY(30px);
     animation: fadeInUp 0.6s ease forwards;
-    cursor: pointer;
 }
 
 .project-card:hover {
@@ -665,6 +664,9 @@ section {
     background: rgba(212, 175, 55, 0.05);
     border: 1px solid rgba(212, 175, 55, 0.2);
     border-radius: 6px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
 }
 
 .students-title {
@@ -684,6 +686,7 @@ section {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-xs);
+    flex: 1;
 }
 
 .student-item {
@@ -705,7 +708,7 @@ section {
     font-size: 0.75rem;
     border-radius: 6px;
     font-weight: 700;
-    min-width: 70px;
+    width: 85px;
     text-align: center;
     font-family: var(--font-display);
     box-shadow: 0 2px 6px rgba(212, 175, 55, 0.4);
@@ -715,6 +718,7 @@ section {
     justify-content: center;
     gap: 0.25rem;
     border: 1px solid rgba(139, 69, 19, 0.3);
+    flex-shrink: 0;
 }
 
 .scene-badge::before {
@@ -784,11 +788,15 @@ section {
     padding: var(--spacing-md);
     text-align: center;
     transition: var(--transition-normal);
+    display: block;
+    text-decoration: none;
+    color: inherit;
 }
 
 .sdg-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+    cursor: pointer;
 }
 
 .sdg-icon {

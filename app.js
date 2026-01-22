@@ -12,9 +12,9 @@ const translations = {
     zh: {
         nav: {
             home: '首頁',
-            projects: '作品',
+            projects: '學生作品',
             sdgs: 'SDGs',
-            team: '團隊'
+            team: '授課教師'
         },
         hero: {
             title: 'SDGs 科技素養專題成果展',
@@ -30,7 +30,7 @@ const translations = {
         },
         projects: {
             title: '學生作品',
-            subtitle: '點擊縮圖開始體驗（建議用手機直向操作）',
+            subtitle: '點擊「開始體驗」進入作品作品頁面（建議用手機直向操作）',
             sceneInfo: '數字代表學生負責的場景編號',
             experience: '開始體驗',
             details: '作品介紹'
@@ -67,7 +67,7 @@ const translations = {
             }
         },
         team: {
-            title: '教師團隊',
+            title: '授課教師',
             qubi: {
                 role: '指導教師',
                 bio: '致力於科技教育與永續發展教育，引導學生運用科技工具探索社會議題，培養創新思維與實踐能力。'
@@ -219,11 +219,6 @@ function createProjectCard(project, index) {
     const summary = project.summary[lang] || project.summary.zh;
     const credits = project.credits[lang] || project.credits.zh;
 
-    // SDG badges
-    const sdgBadges = project.sdgs.map(sdg => 
-        `<span class="sdg-badge">SDG ${sdg}</span>`
-    ).join('');
-
     // Students list with scene numbers
     let studentsList = '';
     if (project.students && project.students.length > 0) {
@@ -245,7 +240,6 @@ function createProjectCard(project, index) {
         <div class="project-content">
             <h3 class="project-title">${title}</h3>
             <p class="project-summary">${summary}</p>
-            <div class="project-sdgs">${sdgBadges}</div>
             ${studentsList}
             <div class="project-actions">
                 <button class="btn btn-primary project-experience" data-project-id="${project.id}">
@@ -256,19 +250,12 @@ function createProjectCard(project, index) {
         </div>
     `;
 
-    // Add click handlers
-    const thumb = card.querySelector('.project-thumb');
+    // Add click handler - only for the experience button
     const experienceBtn = card.querySelector('.project-experience');
     
     const openProject = () => openProjectExperience(project);
     
-    thumb.addEventListener('click', openProject);
     experienceBtn.addEventListener('click', openProject);
-    card.addEventListener('click', (e) => {
-        if (!e.target.closest('.project-actions')) {
-            openProject();
-        }
-    });
 
     return card;
 }
@@ -593,10 +580,8 @@ function setupEventListeners() {
     });
 
     // Setup other features
-    setupSDGFilter();
     setupLanguageToggle();
     setupShare();
-    setupAccordion();
     setupSmoothScroll();
     setupNavbarScroll();
 }
