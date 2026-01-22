@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SDGs 科技素養專題成果展 - 五組學生作品展示">
+    <meta name="theme-color" content="#8B4513">
+    <title>SDGs 科技素養專題成果展 | Tech Literacy Project Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">SDGs Tech</a>
+            <div class="nav-links">
+                <a href="#hero" data-i18n="nav.home">首頁</a>
+                <a href="#projects" data-i18n="nav.projects">作品</a>
+                <a href="#sdgs" data-i18n="nav.sdgs">SDGs</a>
+                <a href="#team" data-i18n="nav.team">團隊</a>
+            </div>
+            <div class="nav-actions">
+                <button class="lang-toggle" id="langToggle" aria-label="Switch Language">EN</button>
+                <button class="share-btn" id="shareBtn" aria-label="Share">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="18" cy="5" r="3"></circle>
+                        <circle cx="6" cy="12" r="3"></circle>
+                        <circle cx="18" cy="19" r="3"></circle>
+                        <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                        <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-background">
+            <div class="gear gear-1"></div>
+            <div class="gear gear-2"></div>
+            <div class="gear gear-3"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title" data-i18n="hero.title">SDGs 科技素養專題成果展</h1>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">五組作品，五種觀點，讓家長用手機直接體驗孩子的創作</p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary" data-i18n="hero.cta">開始探索作品</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- Course Summary -->
+    <section class="summary" id="summary">
+        <div class="container">
+            <h2 class="section-title" data-i18n="summary.title">課程摘要</h2>
+            <div class="summary-content">
+                <p class="summary-text" data-i18n="summary.short">本課程結合 SDGs 永續發展目標與科技素養，引導學生透過 Delightex 平台創作互動式專題。學生分為五組，從不同面向探討永續議題，運用科技工具提出創新解決方案，展現對社會責任的思考與實踐能力。</p>
+                <div class="accordion">
+                    <button class="accordion-btn" id="accordionBtn" data-i18n="summary.expand">展開閱讀更多</button>
+                    <div class="accordion-content" id="accordionContent">
+                        <p data-i18n="summary.full">本專題課程為期一學期，旨在培養學生的科技素養與永續發展意識。課程內容涵蓋 SDGs 目標 7（可負擔的潔淨能源）、9（產業創新與基礎設施）、10（減少不平等）、11（永續城市與社區）、12（負責任的消費與生產）等五大面向。學生透過 Delightex 互動式平台，將抽象的永續概念轉化為具體可體驗的數位作品，不僅學習程式設計與互動設計，更深入理解永續發展的內涵與實踐方式。每組作品都經過完整的設計思考流程，從問題發想、使用者研究、原型製作到最終呈現，展現學生跨領域整合能力與創新思維。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="projects.title">學生作品</h2>
+                <p class="section-subtitle" data-i18n="projects.subtitle">點擊縮圖開始體驗（建議用手機直向操作）</p>
+            </div>
+            
+            <!-- SDG Filter -->
+            <div class="sdg-filter" id="sdgFilter">
+                <button class="filter-btn active" data-sdg="all" data-i18n="filter.all">全部</button>
+                <button class="filter-btn" data-sdg="7" data-i18n="filter.sdg7">SDG 7</button>
+                <button class="filter-btn" data-sdg="9" data-i18n="filter.sdg9">SDG 9</button>
+                <button class="filter-btn" data-sdg="10" data-i18n="filter.sdg10">SDG 10</button>
+                <button class="filter-btn" data-sdg="11" data-i18n="filter.sdg11">SDG 11</button>
+                <button class="filter-btn" data-sdg="12" data-i18n="filter.sdg12">SDG 12</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Projects will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- SDGs Section -->
+    <section class="sdgs" id="sdgs">
+        <div class="container">
+            <h2 class="section-title" data-i18n="sdgs.title">SDGs 永續發展目標</h2>
+            <div class="sdgs-grid">
+                <div class="sdg-card" data-sdg="7">
+                    <div class="sdg-icon">7</div>
+                    <h3 data-i18n="sdgs.7.title">可負擔的潔淨能源</h3>
+                    <p data-i18n="sdgs.7.desc">確保所有人都能取得可負擔、可靠、永續及現代的能源</p>
+                </div>
+                <div class="sdg-card" data-sdg="9">
+                    <div class="sdg-icon">9</div>
+                    <h3 data-i18n="sdgs.9.title">產業創新與基礎設施</h3>
+                    <p data-i18n="sdgs.9.desc">建立具有韌性的基礎設施，促進包容且永續的工業化，並加速創新</p>
+                </div>
+                <div class="sdg-card" data-sdg="10">
+                    <div class="sdg-icon">10</div>
+                    <h3 data-i18n="sdgs.10.title">減少不平等</h3>
+                    <p data-i18n="sdgs.10.desc">減少國內及國家間的不平等</p>
+                </div>
+                <div class="sdg-card" data-sdg="11">
+                    <div class="sdg-icon">11</div>
+                    <h3 data-i18n="sdgs.11.title">永續城市與社區</h3>
+                    <p data-i18n="sdgs.11.desc">使城市與人類居住具包容、安全、韌性及永續性</p>
+                </div>
+                <div class="sdg-card" data-sdg="12">
+                    <div class="sdg-icon">12</div>
+                    <h3 data-i18n="sdgs.12.title">負責任的消費與生產</h3>
+                    <p data-i18n="sdgs.12.desc">確保永續消費及生產模式</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team" id="team">
+        <div class="container">
+            <h2 class="section-title" data-i18n="team.title">教師團隊</h2>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="assets/team/qubi.svg" alt="曲比老師" loading="lazy" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Crect fill=%22%23D4AF37%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%238B4513%22 font-size=%2240%22 font-weight=%22bold%22%3E曲比老師%3C/text%3E%3C/svg%3E'">
+                    </div>
+                    <h3>曲比老師</h3>
+                    <p class="team-role" data-i18n="team.qubi.role">指導教師</p>
+                    <p class="team-bio" data-i18n="team.qubi.bio">致力於科技教育與永續發展教育，引導學生運用科技工具探索社會議題，培養創新思維與實踐能力。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text" data-i18n="footer.copyright">© 2024 SDGs 科技素養專題成果展 | 版權所有</p>
+                <p class="footer-text" data-i18n="footer.note">本網站僅供教育展示用途</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Experience Modal -->
+    <div class="modal" id="experienceModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+            <div class="modal-header">
+                <h3 id="modalTitle"></h3>
+            </div>
+            <div class="modal-body">
+                <div class="modal-tip" data-i18n="modal.tip">建議用手機直向體驗，若載入較久請稍候</div>
+                <div class="modal-iframe-container" id="modalIframeContainer">
+                    <iframe id="modalIframe" src="" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="modal-actions">
+                    <a id="modalExternalLink" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-i18n="modal.openNew">在新分頁開啟</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Skeleton (hidden by default) -->
+    <div class="skeleton" id="skeleton" style="display: none;">
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

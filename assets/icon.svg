@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#1a1a1a"/>
+  <circle cx="256" cy="256" r="200" fill="none" stroke="#D4AF37" stroke-width="8"/>
+  <circle cx="256" cy="256" r="150" fill="none" stroke="#CD853F" stroke-width="6"/>
+  <circle cx="256" cy="256" r="100" fill="none" stroke="#8B4513" stroke-width="4"/>
+  <text x="256" y="280" text-anchor="middle" fill="#D4AF37" font-size="120" font-weight="bold" font-family="Arial">SDGs</text>
+</svg>

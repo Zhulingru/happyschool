@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <defs>
+    <linearGradient id="gradTeam" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d2d2d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="300" height="300" fill="url(#gradTeam)"/>
+  <circle cx="150" cy="120" r="50" fill="none" stroke="#D4AF37" stroke-width="4"/>
+  <circle cx="150" cy="120" r="35" fill="none" stroke="#CD853F" stroke-width="3"/>
+  <text x="150" y="220" text-anchor="middle" fill="#D4AF37" font-size="24" font-weight="bold" font-family="Arial">曲比老師</text>
+  <text x="150" y="250" text-anchor="middle" fill="#CD853F" font-size="16" font-family="Arial">Teacher</text>
+</svg>

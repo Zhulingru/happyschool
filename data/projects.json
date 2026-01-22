@@ -1,0 +1,117 @@
+[
+  {
+    "id": "p1",
+    "title": {
+      "zh": "餐桌之外：當季蔬果永續飲食計畫",
+      "en": "Beyond the Table: Seasonal Produce Sustainable Diet Plan"
+    },
+    "sdgs": [11, 12],
+    "summary": {
+      "zh": "從市場到餐桌，重新理解食物旅程與永續選擇。",
+      "en": "From market to table, rethinking the food journey and sustainable choices."
+    },
+    "thumb": "assets/thumbs/p1.svg",
+    "delightex_url": "https://delightex.com/demo1",
+    "mode": "external",
+    "credits": {
+      "zh": "第 1 組",
+      "en": "Group 1"
+    },
+    "tags": {
+      "zh": ["永續飲食", "市場", "在地"],
+      "en": ["Sustainable Diet", "Market", "Local"]
+    }
+  },
+  {
+    "id": "p2",
+    "title": {
+      "zh": "智慧城市：永續交通解決方案",
+      "en": "Smart City: Sustainable Transportation Solutions"
+    },
+    "sdgs": [9, 11],
+    "summary": {
+      "zh": "運用科技優化城市交通，減少碳排放，打造宜居環境。",
+      "en": "Using technology to optimize urban transportation, reduce carbon emissions, and create livable environments."
+    },
+    "thumb": "assets/thumbs/p2.svg",
+    "delightex_url": "https://delightex.com/demo2",
+    "mode": "external",
+    "credits": {
+      "zh": "第 2 組",
+      "en": "Group 2"
+    },
+    "tags": {
+      "zh": ["智慧城市", "交通", "減碳"],
+      "en": ["Smart City", "Transportation", "Carbon Reduction"]
+    }
+  },
+  {
+    "id": "p3",
+    "title": {
+      "zh": "數位包容：縮小城鄉教育差距",
+      "en": "Digital Inclusion: Bridging Urban-Rural Education Gap"
+    },
+    "sdgs": [4, 10],
+    "summary": {
+      "zh": "透過數位工具讓偏鄉學童也能享有優質教育資源。",
+      "en": "Enabling quality educational resources for rural students through digital tools."
+    },
+    "thumb": "assets/thumbs/p3.svg",
+    "delightex_url": "https://delightex.com/demo3",
+    "mode": "external",
+    "credits": {
+      "zh": "第 3 組",
+      "en": "Group 3"
+    },
+    "tags": {
+      "zh": ["數位教育", "偏鄉", "包容"],
+      "en": ["Digital Education", "Rural", "Inclusion"]
+    }
+  },
+  {
+    "id": "p4",
+    "title": {
+      "zh": "循環經濟：廢棄物轉化再生計畫",
+      "en": "Circular Economy: Waste-to-Resource Transformation"
+    },
+    "sdgs": [9, 12],
+    "summary": {
+      "zh": "將廢棄物轉化為資源，實踐循環經濟理念。",
+      "en": "Transforming waste into resources, practicing circular economy principles."
+    },
+    "thumb": "assets/thumbs/p4.svg",
+    "delightex_url": "https://delightex.com/demo4",
+    "mode": "external",
+    "credits": {
+      "zh": "第 4 組",
+      "en": "Group 4"
+    },
+    "tags": {
+      "zh": ["循環經濟", "廢棄物", "再生"],
+      "en": ["Circular Economy", "Waste", "Recycling"]
+    }
+  },
+  {
+    "id": "p5",
+    "title": {
+      "zh": "永續社區：在地行動與全球視野",
+      "en": "Sustainable Community: Local Action, Global Vision"
+    },
+    "sdgs": [11, 12],
+    "summary": {
+      "zh": "從社區出發，連結全球永續發展目標，展現在地行動力。",
+      "en": "Starting from the community, connecting to global SDGs, demonstrating local action."
+    },
+    "thumb": "assets/thumbs/p5.svg",
+    "delightex_url": "https://delightex.com/demo5",
+    "mode": "external",
+    "credits": {
+      "zh": "第 5 組",
+      "en": "Group 5"
+    },
+    "tags": {
+      "zh": ["社區行動", "永續", "在地"],
+      "en": ["Community Action", "Sustainability", "Local"]
+    }
+  }
+]
